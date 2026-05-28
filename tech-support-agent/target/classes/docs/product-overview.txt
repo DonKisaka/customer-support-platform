@@ -1,0 +1,18 @@
+SmartFlow CRM - Product Overview
+
+SmartFlow CRM is a cloud-based customer relationship management platform designed to help businesses manage customer interactions, track sales pipelines, and automate support workflows.
+
+Key Features:
+- Contact Management: Store and manage all customer and prospect information in one place.
+- Sales Pipeline: Visualize and track deals through customizable pipeline stages.
+- Email Integration: Sync with Gmail and Outlook to log all customer communications automatically.
+- Task Automation: Create workflows that trigger actions based on customer behavior or deal stage changes.
+- Reporting Dashboard: Generate real-time reports on sales performance, customer activity, and team productivity.
+- Customer Support Ticketing: Built-in ticketing system to manage and resolve customer issues efficiently.
+
+Editions:
+- Starter: Up to 5 users, basic CRM features, email integration.
+- Professional: Up to 25 users, sales automation, reporting, and API access.
+- Enterprise: Unlimited users, advanced automation, custom integrations, dedicated support.
+
+SmartFlow CRM integrates with over 200 third-party tools including Slack, Zapier, Shopify, QuickBooks, and Stripe.

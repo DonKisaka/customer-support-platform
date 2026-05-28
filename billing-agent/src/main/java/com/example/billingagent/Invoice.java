@@ -30,7 +30,7 @@ public class Invoice {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private InvoiceStatus status; // PAID, UNPAID, REFUNDED
+    private InvoiceStatus status;
 
     @NotNull
     @Column(name = "issue_date", nullable = false)

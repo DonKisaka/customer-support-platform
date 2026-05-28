@@ -19,7 +19,7 @@ public class BillingTools {
 
     @Tool(description = "Get all invoices for a customer by customer ID")
     @Transactional(readOnly = true)
-    public List<Invoice> getInvoicesByCustomer(
+    public List<InvoiceDto> getInvoicesByCustomer(
             @ToolParam(description = "The customer ID") String customerId) {
         return invoiceRepository.findByCustomerId(customerId);
     }

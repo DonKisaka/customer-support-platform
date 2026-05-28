@@ -10,16 +10,14 @@ import java.util.List;
 
 public interface InvoiceRepository extends JpaRepository<Invoice, Long> {
 
-    List<Invoice> findByCustomerId(String customerId);
+    List<InvoiceDto> findByCustomerId(String customerId);
 
     List<Invoice> findByCustomerIdAndStatus(String customerId, InvoiceStatus status);
 
     List<Invoice> findByStatusAndDueDateBefore(InvoiceStatus status, LocalDate date);
 
-    // All invoices by status (e.g. all UNPAID across all customers)
     List<Invoice> findByStatus(InvoiceStatus status);
 
-    // Total amount owed by a customer
     @Query("SELECT SUM(i.amount) FROM Invoice i WHERE i.customerId = :customerId AND i.status = :status")
     BigDecimal sumAmountByCustomerIdAndStatus(@Param("customerId") String customerId,
                                               @Param("status") InvoiceStatus status);
